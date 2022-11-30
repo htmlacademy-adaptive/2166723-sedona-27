@@ -18,7 +18,7 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Фото и видео</a>
@@ -51,6 +51,62 @@
           посещенных вами достопримечательностях</dd>
       </dl>
     </section>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="feedback-form__group">
+        <legend class="group__title">Представьтесь:</legend>
+        <label class="group__name">Имя*:
+          <input class="name__input" type="text" value="Петр" placeholder="Имя" required>
+        </label>
+        <label class="group__name">Фамилия*:
+          <input class="name__input" type="text" value="Пустота" placeholder="Фамилия" required>
+        </label>
+        <label class="group__name">Отчество:
+          <input class="name__input" type="text" value="Викторович" placeholder="Отчество">
+        </label>
+      </fieldset>
+      <fieldset class="feedback-form__group">
+        <legend class="group__title">Контактная информация:</legend>
+        <label class="group__contact-info">Контактный телефон*:
+          <input class="contact-info__input" type="tel" placeholder="Введите телефон" required>
+          <button class="contact-info__button" type="button">
+            <span class="visually-hidden">Трубка телефона.</span>
+          </button>
+        </label>
+        <label class="group__contact-info">Электронная почта*:
+          <input class="contact-info__input" type="email" placeholder="Введите e-mail" required>
+          <button class="contact-info__button" type="button">
+            <span class="visually-hidden">Почтовый конверт.</span>
+          </button>
+        </label>
+      </fieldset>
+      <fieldset class="feedback-form__group">
+        <legend class="group__title">Ваше общее впечатление:</legend>
+        <label class="group__impression">
+          <input class="impression__input" type="radio" name="impression__input" checked>Скорее положительное
+        </label>
+        <label class="group__impression">
+          <input class="impression__input" type="radio" name="impression__input">Скорее отрицательное
+        </label>
+        <label class="group__impression">
+          <input class="impression__input" type="radio" name="impression__input">Затрудняюсь ответить
+        </label>
+      </fieldset>
+      <fieldset class="feedback-form__group">
+        <legend class="group__title">Посещенные достопримечательности:</legend>
+        <label class="group__visit">
+          <input class="visit__input" type="checkbox" name="visit__input" checked>Мост Дьявола
+        </label>
+        <label class="group__visit">
+          <input class="visit__input" type="checkbox" name="visit__input" checked>Гора-Колокол
+        </label>
+        <label class="group__visit">
+          <input class="visit__input" type="checkbox" name="visit__input" checked>Слайд-парк
+        </label>
+        <label class="group__visit">
+          <input class="visit__input" type="checkbox" name="visit__input">Красные скалы
+        </label>
+      </fieldset>
+    </form>
   </main>
 </body>
 
