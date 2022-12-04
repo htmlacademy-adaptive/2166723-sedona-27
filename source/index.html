@@ -9,9 +9,9 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="img/main-header__logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
+      <img src="img/main-header-logo.svg" width="185" height="96" alt="Логотип сайта Седона.">
     </a>
-    <nav class="main-navigation">
+    <nav class="main-header__nav main-navigation">
       <button class="main-navigation__open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -21,10 +21,10 @@
             <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Фото и видео</a>
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Форма Отзыва</a>
+            <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">HTML ACADEMY</a>
@@ -45,9 +45,9 @@
       <div class="intro__image">
         <img src="img/site-welcome.png" width="282" height="214" alt="Добро пожаловать на сайт Седона.">
       </div>
-      <dl class="intro-description">
-        <dt class="intro-description__term">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</dt>
-        <dd class="intro-description__definition">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</dd>
+      <dl class="intro__description">
+        <dt class="intro__description-term">Седона — небольшой городок в АРИЗОНЕ, заслуживающий большего!</dt>
+        <dd class="intro__description-definition">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</dd>
       </dl>
     </section>
     <section class="benefits">
@@ -55,9 +55,9 @@
       <ol class="benefits__list">
         <li class="benefits__item">
           <div class="benefit">
-            <h3 class="benefit__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <h3 class="benefit__title">Настоящий городок</h3>
             <p class="benefit__number">— №1 —</p>
-            <p class="benefit__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <p class="benefit__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="benefit-image">
             <img src="img/benefit-image-1.jpg" width="320" height="260" alt="Мотель в городе Седона">
@@ -86,8 +86,8 @@
               </svg>
               <span class="visually-hidden">Бургер.</span>
             </div>
-            <h3 class="benefit-discription__title">ЕДА</h3>
-            <p class="benefit-discription__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            <h3 class="benefit-discription__title">Еда</h3>
+            <p class="benefit-discription__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="benefit-discription">
             <div class="benefit-icon">
@@ -97,13 +97,13 @@
               </svg>
               <span class="visually-hidden">Подарочная коробка.</span>
             </div>
-            <h3 class="benefit-discription__title">СУВЕНИРЫ</h3>
+            <h3 class="benefit-discription__title">Сувениры</h3>
             <p class="benefit-discription__text">Не только китайского, но и местного производства!</p>
           </div>
         </li>
         <li class="benefits__item">
           <div class="benefit">
-            <h3 class="benefit__title">ТАМ ЕСТЬ Мост дьявола</h3>
+            <h3 class="benefit__title">Там есть мост дьявола</h3>
             <p class="benefit__number">— №2 —</p>
             <p class="benefit__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
@@ -113,21 +113,21 @@
         </li>
         <li class="benefits__item">
           <div class="benefit">
-            <h3 class="benefit__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <h3 class="benefit__title">Небольшая площадь</h3>
             <p class="benefit__number">— №3 —</p>
-            <p class="benefit__text">ВСЕ интересные места находятся очень близко</p>
+            <p class="benefit__text">Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="benefits__item">
           <div class="benefit">
-            <h3 class="benefit__title">КРАСИВАЯ ДОРОГА</h3>
+            <h3 class="benefit__title">Красивая дорога</h3>
             <p class="benefit__number">— №4 —</p>
-            <p class="benefit__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            <p class="benefit__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="benefits__item">
           <div class="benefit">
-            <h3 class="benefit__title">МАЛО ТУРИСТОВ</h3>
+            <h3 class="benefit__title">Мало туристов</h3>
             <p class="benefit__number">— №5 —</p>
             <p class="benefit__text">Большинство едет в гранд каньон и толпится там</p>
           </div>
@@ -136,10 +136,10 @@
     </section>
     <section class="hotel-search">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <b class="hotel-search__title">ЗАИНТЕРЕСОВАЛИСЬ?</b>
+      <b class="hotel-search__title">Заинтересовались?</b>
       <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
-      <button class="hotel-search__button">Найти Гостиницу</button>
+      <a class="hotel-search__button" href="#">Найти Гостиницу</a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
