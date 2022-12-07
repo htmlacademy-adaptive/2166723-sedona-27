@@ -4,20 +4,36 @@
   position: relative;
   width: 100%;
   padding: 17px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .main-navigation__open {
   background: linear-gradient(to bottom,
-  #81b3d2 0 4px,
-  #ffffff 4px 9px,
-  #81b3d2 9px 13px,
-  #ffffff 13px 18px,
-  #81b3d2 18px 100%);
+      #81b3d2 0 4px,
+      #ffffff 4px 9px,
+      #81b3d2 9px 13px,
+      #ffffff 13px 18px,
+      #81b3d2 18px 100%);
   width: 23px;
   height: 22px;
   padding: 0;
   border: none;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .main-navigation__wrapper {
@@ -27,6 +43,20 @@
   top: 0;
   background-color: #81b3d2;
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+  }
 }
 
 .main-navigation__list {
@@ -45,4 +75,12 @@
   padding: 0;
   border: 0;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
