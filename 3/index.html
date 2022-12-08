@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
   <base href="https://htmlacademy-adaptive.github.io/2166723-sedona-27/3/">
@@ -20,7 +21,7 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+            <a class="site-list__link site-list__link--active">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
@@ -45,7 +46,8 @@
     <h1 class="visually-hidden">Главная страница сайта "Седона"</h1>
     <section class="intro">
       <div class="intro__image">
-        <img src="img/site-welcome.svg" width="282" height="214" alt="Добро пожаловать на сайт Седона.">
+        <img class="intro__image-size" src="img/site-welcome.svg" width="282" height="214"
+          alt="Добро пожаловать на сайт Седона.">
       </div>
       <dl class="intro__description">
         <dt class="intro__description-term">Седона — небольшой городок в АРИЗОНЕ, заслуживающий большего!</dt>
@@ -61,8 +63,8 @@
             <p class="benefit__number">— №1 —</p>
             <p class="benefit__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div class="list-benefits__image">
-            <img src="img/benefit-image-1.jpg" width="320" height="260" alt="Мотель в городе Седона">
+          <div class="list-benefits__image-1">
+            <span class="visually-hidden">Мотель в городе Седона"</span>
           </div>
           <div class="list-benefits__advantage benefit-discription">
             <div class="benefit-discription__icon">
@@ -185,7 +187,7 @@
           </a>
         </li>
       </ul>
-      <a class="contacts__link developers" href="#">
+      <a class="contacts__link developers" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="developers__text">Разработано</p>
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="34" viewBox="0 0 60 60">
           <path fill="#000000"
