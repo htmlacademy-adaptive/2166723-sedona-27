@@ -24,13 +24,20 @@
 
 .benefit--image {
   padding: 37px 18px;
-  min-height: 191px;
   background-color: #81b3d2;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .benefit--no-image {
   padding: 24px 18px;
-  min-height: 166px;
   background-color: #eeeeee;
 }

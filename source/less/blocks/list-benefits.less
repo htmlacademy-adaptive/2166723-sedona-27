@@ -1,17 +1,9 @@
-.list-benefits {
-  display: grid;
-
-  @media (min-width: @tablet-width) {
-    grid-template-columns: 728px;
-    grid-template-rows: 587px 256px 256px;
-  }
-}
+.list-benefits {}
 
 .list-benefits__item {
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 256px 256px 256px;
-    grid-template-rows: 256px 331px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -19,13 +11,11 @@
 
 .list-benefits__advantage {}
 
+.list-benefits__image {}
+
 .list-benefits__image-1 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  background-image: url("../img/benefit-image-1.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  width: 320px;
+  height: 260px;
 
   @media (min-width: @tablet-width) {
     width: 512px;
