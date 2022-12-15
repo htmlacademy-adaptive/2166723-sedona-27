@@ -1,5 +1,16 @@
 .feedback-form {
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
 }
 
 .feedback-form__group {
@@ -9,7 +20,6 @@
 }
 
 .feedback-form__send-button {
-  display: block;
   width: 280px;
   height: 58px;
   background-color: #81b3d2;
@@ -19,6 +29,16 @@
   font-size: 21px;
   line-height: 26px;
   padding: 0;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    margin-right: 130px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+  }
 }
 
 .feedback-form__send-text {

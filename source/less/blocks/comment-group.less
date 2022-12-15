@@ -1,4 +1,19 @@
-.comment-group {}
+.comment-group {
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.comment-group__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .comment-group__comment {
   font-family: "PT Sans", sans-serif;
@@ -11,4 +26,13 @@
   border: none;
   background-color: #f2f2f2;
   resize: none;
+  margin-bottom: 56px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
 }
