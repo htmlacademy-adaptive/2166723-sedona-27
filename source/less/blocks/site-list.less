@@ -3,12 +3,6 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -22,8 +16,12 @@
   display: flex;
   justify-content: center;
 
-  &:nth-child(2) {
-    margin-right: 170px;
+  @media (min-width: @tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
   }
 }
 

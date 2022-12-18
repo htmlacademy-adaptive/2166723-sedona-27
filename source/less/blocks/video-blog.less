@@ -1,13 +1,33 @@
 .video-blog {
   padding: 17px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 .video-blog__title {
   color: #000000;
+  text-align: center;
 }
 
 .video-blog__text {
   text-align: center;
 }
 
-.video-blog__video-wrapper {}
+.video-blog__video {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}

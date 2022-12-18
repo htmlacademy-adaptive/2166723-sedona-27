@@ -1,5 +1,13 @@
 .hotel-search {
   padding: 38px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 371px;
+  }
 }
 
 .hotel-search__title {
@@ -24,4 +32,9 @@
   line-height: 26px;
   text-decoration: none;
   padding: 16px 49px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 }

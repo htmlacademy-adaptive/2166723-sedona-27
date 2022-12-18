@@ -11,10 +11,16 @@ body {
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    width: 728px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
   }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
