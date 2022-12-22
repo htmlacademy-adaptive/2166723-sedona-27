@@ -15,10 +15,21 @@
 .video-blog__title {
   color: #000000;
   text-align: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .video-blog__text {
   text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 445px;
+    margin-bottom: 70px;
+  }
 }
 
 .video-blog__video-wrapper {

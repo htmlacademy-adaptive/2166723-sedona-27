@@ -1,3 +1,9 @@
+.gallery {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+  }
+}
+
 .gallery__list {
   padding: 24px 20px;
   list-style-type: none;
@@ -18,10 +24,16 @@
 
 .gallery__item {
   margin-bottom: 50px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 324px;
     margin: 0;
+    background-color: #f2f2f2;
+
+    &:nth-child(3) {
+      background-color: #eaeaea;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -43,9 +55,15 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    padding: 15px 20px;
+    padding: 22px 15px 20px 15px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -58,6 +76,7 @@
   @media (min-width: @tablet-width) {
     width: 324px;
     height: 267px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,6 +106,10 @@
   margin: 0;
   font-weight: 700;
   font-size: 14px;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .gallery__item-aftor {
@@ -97,17 +120,35 @@
   @media (min-width: @tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .gallery__like-button {
-  background-image: url("../img/like-icon.svg");
-  background-repeat: no-repeat;
-  background-position: left;
-  display: flex;
-  align-items: center;
   text-decoration: none;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+
+  & svg {
+    margin-right: 14px;
+
+    @media (min-width: @desktop-width) {
+      fill: #ffffff;
+      opacity: 1;
+    }
+  }
 }
 
 .gallery__amount-likes {
-  margin-left: 30px;
+  font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
