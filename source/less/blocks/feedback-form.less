@@ -1,6 +1,7 @@
 .feedback-form {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -14,9 +15,16 @@
 }
 
 .feedback-form__group {
-  border: none;
   padding: 0;
   margin: 0;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border: none;
+  border-bottom: #e5e5e5 1px solid;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .feedback-form__send-button {
@@ -33,16 +41,30 @@
 
   @media (min-width: @tablet-width) {
     width: 324px;
-    margin-right: 130px;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
     width: 384px;
+    margin-left: 10%;
   }
 }
 
 .feedback-form__send-text {
+  margin: 0;
   font-size: 12px;
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  @media (min-width: @tablet-width) {
+    color: #333333;
+    font-size: 14px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10%;
+  }
 }

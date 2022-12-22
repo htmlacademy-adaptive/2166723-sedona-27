@@ -1,4 +1,10 @@
 .textarea-group {
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    border-top: #e5e5e5 1px solid;
+  }
+
   @media (min-width: @desktop-width) {
     width: 960px;
     display: flex;
@@ -25,7 +31,6 @@
   border: none;
   background-color: #f2f2f2;
   resize: none;
-  margin-bottom: 56px;
 
   @media (min-width: @tablet-width) {
     width: 648px;

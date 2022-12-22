@@ -5,17 +5,27 @@
 
   &:first-child {
     @media (min-width: @tablet-width) {
-      margin-right: 70px;
+      padding-right: 43px;
+      margin-right: 44px;
+      border-right: #e5e5e5 1px solid;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: @tablet-width) {
+      padding-left: 44px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 430px;
+    width: 410px;
   }
 }
 
+
 .input-text-group__title {
   padding: 0;
+  margin: 0;
   margin-bottom: 20px;
   color: #000000;
   font-weight: 700;
