@@ -1,4 +1,10 @@
-.comment-group {
+.textarea-group {
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    border-top: #e5e5e5 1px solid;
+  }
+
   @media (min-width: @desktop-width) {
     width: 960px;
     display: flex;
@@ -6,7 +12,7 @@
   }
 }
 
-.comment-group__title {
+.textarea-group__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -15,8 +21,7 @@
   margin-bottom: 20px;
 }
 
-.comment-group__comment {
-  font-family: "PT Sans", sans-serif;
+.textarea-group__comment {
   width: 279px;
   min-height: 150px;
   padding: 16px;
@@ -26,7 +31,6 @@
   border: none;
   background-color: #f2f2f2;
   resize: none;
-  margin-bottom: 56px;
 
   @media (min-width: @tablet-width) {
     width: 648px;

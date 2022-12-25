@@ -11,37 +11,38 @@
     height: 518px;
   }
 
-  .intro__image--size-catalog {
+  & img {
     @media (min-width: @tablet-width) {
-      width: 457px;
-      height: 77px;
+      min-width: 460px;
+      height: auto;
     }
   }
 }
 
-.intro__image-size {
-  @media (min-width: @tablet-width) {
-    width: 461px;
-    height: 350px;
-  }
-}
-
 .intro__description {
-  margin: 0 auto;
   padding: 32px 18px;
 
+  @media (min-width: @tablet-width) {
+    padding: 47px 124px 55px 124px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 500px;
+    padding: 59px 357px 44px 357px;
   }
 }
 
-.intro__description-term {
+.intro__description-title {
   color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
   margin-bottom: 35px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .intro__description-definition {
