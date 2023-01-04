@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -44,7 +48,10 @@
   <main class="main-container">
     <section class="intro">
       <div class="intro__image">
-        <img src="img/intro.svg" width="229" height="39" alt="Добро пожаловать на сайт Седона.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/intro.svg" width="457" height="77">
+          <img src="img/intro.svg" width="229" height="39" alt="Добро пожаловать на сайт Седона.">
+        </picture>
       </div>
       <div class="intro__description">
         <h1 class="intro__description-title">Оставьте свой отзыв</h1>
@@ -70,8 +77,8 @@
       <fieldset class="feedback-form__group input-text-group">
         <legend class="input-text-group__title">Контактная информация:</legend>
         <label class="input-text-group__label">Контактный телефон*:
-          <input class="input-text-group__input input-text-group__input--have-icon" type="tel"
-            placeholder="Введите телефон" name="phone" required>
+          <input class="input-text-group__input input-text-group__input--icon" type="tel" placeholder="Введите телефон"
+            name="phone" required>
           <span class="input-text-group__icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
               <path fill="#010101"
@@ -80,8 +87,8 @@
           </span>
         </label>
         <label class="input-text-group__label">Электронная почта*:
-          <input class="input-text-group__input input-text-group__input--have-icon" type="email"
-            placeholder="Введите e-mail" name="email" required>
+          <input class="input-text-group__input input-text-group__input--icon" type="email" placeholder="Введите e-mail"
+            name="email" required>
           <span class="input-text-group__icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none">
               <path fill="#000"
@@ -129,8 +136,10 @@
         <textarea class="textarea-group__comment" placeholder="Опишите подробно все свои восторги"
           name="comment"></textarea>
       </fieldset>
-      <button class="feedback-form__send-button" type="submit">Отправить отзыв</button>
-      <p class="feedback-form__send-text">* — обязательные поля</p>
+      <div class="feedback-form__send">
+        <button class="feedback-form__send-button" type="submit">Отправить отзыв</button>
+        <p class="feedback-form__send-text">* — обязательные поля</p>
+      </div>
     </form>
   </main>
   <footer class="main-footer">
@@ -178,4 +187,5 @@
     </section>
   </footer>
 </body>
+
 </html>

@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -43,8 +47,11 @@
   </header>
   <main class="main-container">
     <section class="intro">
-      <div class="intro__image">
-        <img src="img/site-welcome.svg" width="282" height="214" alt="Добро пожаловать на сайт Седона.">
+      <div class="intro__image intro__image--index">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/intro-index.svg" width="461" height="350">
+          <img src="img/intro-index.svg" width="282" height="214" alt="Добро пожаловать на сайт Седона.">
+        </picture>
       </div>
       <div class="intro__description">
         <h1 class="intro__description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -61,7 +68,12 @@
             <p class="benefit__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="list-benefits__image-container">
-            <img src="img/benefit-image-1.jpg" width="320" height="260" alt="Местный отель.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/benefit-image/benefit1-desktop@1x.jpg 1x, img/benefit-image/benefit1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/benefit-image/benefit1-tablet@1x.jpg 1x, img/benefit-image/benefit1-tablet@2x.jpg 2x">
+              <img src="img/benefit-image/benefit1-phone@1x.jpg" srcset="img/benefit-image/benefit1-phone@2x.jpg 2x"
+                width="520" height="260" alt="Местный отель.">
+            </picture>
           </div>
           <div class="list-benefits__advantage benefit-discription">
             <div class="benefit-discription__icon">
@@ -142,7 +154,12 @@
             <p class="benefit__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <div class="list-benefits__image-container">
-            <img src="img/benefit-image-2.jpg" width="320" height="260" alt="Мост в коньоне из горы.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/benefit-image/benefit2-desktop@1x.jpg 1x, img/benefit-image/benefit2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/benefit-image/benefit2-tablet@1x.jpg 1x, img/benefit-image/benefit2-tablet@2x.jpg 2x">
+              <img src="img/benefit-image/benefit2-phone@1x.jpg" srcset="img/benefit-image/benefit2-phone@2x.jpg 2x"
+                width="520" height="260" alt="Местный отель.">
+            </picture>
           </div>
         </li>
         <li class="list-benefits__item">
