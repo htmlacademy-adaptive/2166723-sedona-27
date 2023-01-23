@@ -27,6 +27,14 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -37,12 +45,13 @@
 }
 
 .main-navigation__wrapper {
-  display: none;
+  display: flex;
   position: absolute;
   width: 320px;
   left: 0;
   top: 0;
   background-color: #81b3d2;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -75,6 +84,14 @@
   padding: 0;
   border: 0;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
