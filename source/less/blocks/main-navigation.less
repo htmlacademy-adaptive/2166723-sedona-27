@@ -45,7 +45,6 @@
 }
 
 .main-navigation__wrapper {
-  display: flex;
   position: absolute;
   width: 320px;
   left: 0;
@@ -66,6 +65,14 @@
     background-color: transparent;
     position: relative;
   }
+
+  &--opened {
+    display: none;
+  }
+
+  &--no-js {
+    display: flex;
+  }
 }
 
 .main-navigation__list {
@@ -84,6 +91,10 @@
   padding: 0;
   border: 0;
   cursor: pointer;
+
+  &--no-js {
+    display: none;
+  }
 
   &:hover {
     opacity: 0.6;
