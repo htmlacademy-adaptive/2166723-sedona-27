@@ -22,7 +22,7 @@
       <button class="main-navigation__open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-navigation__wrapper">
+      <div class="main-navigation__wrapper main-navigation__wrapper--no-js main-navigation__wrapper--opened">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active">Главная</a>
@@ -37,7 +37,7 @@
             <a class="site-list__link" href="#">HTML ACADEMY</a>
           </li>
         </ul>
-        <button class="main-navigation__close" type="button">
+        <button class="main-navigation__close main-navigation__close--no-js" type="button">
           <svg width="23" height="23">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
@@ -207,6 +207,8 @@
       </a>
     </section>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

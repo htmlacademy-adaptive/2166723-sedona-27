@@ -22,7 +22,7 @@
       <button class="main-navigation__open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-navigation__wrapper">
+      <div class="main-navigation__wrapper main-navigation__wrapper--no-js main-navigation__wrapper--opened">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -30,14 +30,14 @@
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Форма Отзыва</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">HTML ACADEMY</a>
           </li>
         </ul>
-        <button class="main-navigation__close" type="button">
+        <button class="main-navigation__close main-navigation__close--no-js" type="button">
           <svg width="23" height="23">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
@@ -99,34 +99,34 @@
       <fieldset class="feedback-form__group radio-group">
         <legend class="radio-group__title">Ваше общее впечатление:</legend>
         <label class="radio-group__label">
-          <input class="radio-group__impression-input" type="radio" name="impression" checked>
+          <input class="radio-group__impression-input visually-hidden" type="radio" name="impression" checked>
           <span class="radio-group__impression-text">Скорее положительное</span>
         </label>
         <label class="radio-group__label">
-          <input class="radio-group__impression-input" type="radio" name="impression">
+          <input class="radio-group__impression-input visually-hidden" type="radio" name="impression">
           <span class="radio-group__impression-text">Скорее отрицательное</span>
         </label>
         <label class="radio-group__label">
-          <input class="radio-group__impression-input" type="radio" name="impression">
+          <input class="radio-group__impression-input visually-hidden" type="radio" name="impression">
           <span class="radio-group__impression-text">Затрудняюсь ответить</span>
         </label>
       </fieldset>
       <fieldset class="feedback-form__group checkbox-group">
         <legend class="checkbox-group__title">Посещенные достопримечательности:</legend>
         <label class="checkbox-group__label">
-          <input class="checkbox-group__visit-input" type="checkbox" name="visit" checked>
+          <input class="checkbox-group__visit-input visually-hidden" type="checkbox" name="visit" checked>
           <span class="checkbox-group__visit-text">Мост Дьявола</span>
         </label>
         <label class="checkbox-group__label">
-          <input class="checkbox-group__visit-input" type="checkbox" name="visit" checked>
+          <input class="checkbox-group__visit-input visually-hidden" type="checkbox" name="visit" checked>
           <span class="checkbox-group__visit-text">Гора-Колокол</span>
         </label>
         <label class="checkbox-group__label">
-          <input class="checkbox-group__visit-input" type="checkbox" name="visit" checked>
+          <input class="checkbox-group__visit-input visually-hidden" type="checkbox" name="visit" checked>
           <span class="checkbox-group__visit-text">Слайд-парк</span>
         </label>
         <label class="checkbox-group__label">
-          <input class="checkbox-group__visit-input" type="checkbox" name="visit">
+          <input class="checkbox-group__visit-input visually-hidden" type="checkbox" name="visit">
           <span class="checkbox-group__visit-text">Красные скалы</span>
         </label>
       </fieldset>
@@ -180,6 +180,25 @@
       </a>
     </section>
   </footer>
+  <div class="modal-error modal-error--close">
+    <div class="modal-error__modal">
+      <h2 class="modal-error__title">Что-то пошло не так!</h2>
+      <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal-error__button">Ок</button>
+    </div>
+  </div>
+  <div class="modal-send modal-send--close">
+    <div class="modal-send__modal">
+      <h2 class="modal-send__title">Ваш отзыв отправлен!</h2>
+      <p class="modal-send__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+        его на сайте.</p>
+      <div class="modal-send__button-container">
+        <button class="modal-send__button">Закрыть окно</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
