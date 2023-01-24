@@ -52,22 +52,22 @@
   background-color: #81b3d2;
   z-index: 1;
 
-  @media (min-width: @tablet-width) {
-    display: flex;
-    width: 100%;
-    background-color: transparent;
-    position: relative;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    width: 100%;
-    background-color: transparent;
-    position: relative;
-  }
-
   &--opened {
     display: none;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      width: 100%;
+      background-color: transparent;
+      position: relative;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: flex;
+      width: 100%;
+      background-color: transparent;
+      position: relative;
+    }
   }
 
   &--no-js {
