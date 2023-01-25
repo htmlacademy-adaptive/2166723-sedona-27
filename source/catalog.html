@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,13 +21,13 @@
       <button class="main-navigation__open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-navigation__wrapper">
+      <div class="main-navigation__wrapper main-navigation__wrapper--no-js main-navigation__wrapper--opened">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Фото и видео</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
@@ -36,7 +36,7 @@
             <a class="site-list__link" href="#">html academy</a>
           </li>
         </ul>
-        <button class="main-navigation__close" type="button">
+        <button class="main-navigation__close main-navigation__close--no-js" type="button">
           <svg width="23" height="23">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
@@ -79,7 +79,7 @@
               <p class="gallery__item-aftor">Автор фото: Борис</p>
             </div>
             <a class="gallery__like-button" href="#">
-              <svg width="23" height="21" fill="#000000" opacity="0.3">
+              <svg width="23" height="21">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
               <span class="visually-hidden">Кнопка лайка.</span>
@@ -105,7 +105,7 @@
               <p class="gallery__item-aftor">Автор фото: Сергей</p>
             </div>
             <a class="gallery__like-button" href="#">
-              <svg width="23" height="21" fill="#000000" opacity="0.3">
+              <svg width="23" height="21">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
               <span class="visually-hidden">Кнопка лайка.</span>
@@ -131,7 +131,7 @@
               <p class="gallery__item-aftor">Автор фото: Петр</p>
             </div>
             <a class="gallery__like-button" href="#">
-              <svg width="23" height="21" fill="#000000" opacity="0.3">
+              <svg width="23" height="21">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
               <span class="visually-hidden">Кнопка лайка.</span>
@@ -157,7 +157,7 @@
               <p class="gallery__item-aftor">Автор фото: Антон</p>
             </div>
             <a class="gallery__like-button" href="#">
-              <svg width="23" height="21" fill="#000000" opacity="0.3">
+              <svg width="23" height="21">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
               <span class="visually-hidden">Кнопка лайка.</span>
@@ -196,7 +196,7 @@
         <li class="social-networks__item">
           <a class="social-networks__link" href="#">
             <svg width="24" height="14">
-              <use xlink:href="img/sprite.svg#icon-social-1"></use>
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
             <span class="visually-hidden">Иконка ВКонтакте.</span>
           </a>
@@ -204,7 +204,7 @@
         <li class="social-networks__item">
           <a class="social-networks__link" href="#">
             <svg width="21" height="17">
-              <use xlink:href="img/sprite.svg#icon-social-2"></use>
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
             </svg>
             <span class="visually-hidden">Иконка телеграм.</span>
           </a>
@@ -212,7 +212,7 @@
         <li class="social-networks__item">
           <a class="social-networks__link" href="#">
             <svg width="20" height="14">
-              <use xlink:href="img/sprite.svg#icon-social-3"></use>
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
             <span class="visually-hidden">Иконка ютуб.</span>
           </a>
@@ -227,6 +227,8 @@
       </a>
     </section>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

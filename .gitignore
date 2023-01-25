@@ -1,4 +1,4 @@
-.DS_Store
+DS_Store
 .idea
 .vscode
 *.ai
@@ -11,3 +11,4 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+build/

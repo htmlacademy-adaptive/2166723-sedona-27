@@ -22,6 +22,7 @@
 }
 
 .textarea-group__comment {
+  font-family: @pt-sans;
   width: 279px;
   min-height: 150px;
   padding: 16px;
@@ -31,6 +32,10 @@
   border: none;
   background-color: #f2f2f2;
   resize: none;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 648px;

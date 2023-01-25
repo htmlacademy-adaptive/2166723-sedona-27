@@ -1,20 +1,25 @@
 .checkbox-group {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    width: 560px;
     border-top: #e5e5e5 1px solid;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     width: 960px;
-    justify-content: space-between;
   }
 }
 
 .checkbox-group__label {
   width: 280px;
-  margin-bottom: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: @desktop-width) {
     width: auto;
@@ -30,10 +35,51 @@
   margin-bottom: 20px;
 }
 
+.checkbox-group__visit-input {
+  position: relative;
+}
+
+.checkbox-group__visit-input[type="checkbox"]:checked + .checkbox-group__visit-text::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  top: 15px;
+  left: 12px;
+  background-image: url("../img/checkbox.svg");
+  z-index: 1;
+}
+
+.checkbox-group__visit-input[type="checkbox"]:checked + .checkbox-group__visit-text:active::before {
+  opacity: 0.3;
+}
+
 .checkbox-group__visit-text {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   text-transform: none;
+  position: relative;
+  padding-left: 62px;
+  padding-top: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 0;
+    top: 0;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+  }
+
+  &:hover::after {
+    background-color: #e5e5e5;
+  }
+
+  &:active::after {
+    background-color: #d5d5d5;
+  }
 }
