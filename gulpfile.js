@@ -71,6 +71,9 @@ const svg = () =>
 gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
+gulp.src(['source/img/favicons/*.svg'])
+.pipe(svgo())
+.pipe(gulp.dest('build/img/favicons'));
 
 const sprite = () => {
 return gulp.src('source/img/icons/*.svg')
