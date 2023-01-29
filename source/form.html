@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -131,8 +133,10 @@
       </fieldset>
       <fieldset class="feedback-form__group textarea-group">
         <legend class="textarea-group__title">Опишите свои эмоции:</legend>
-        <textarea class="textarea-group__comment" placeholder="Опишите подробно все свои восторги"
-          name="comment"></textarea>
+        <label class="textarea-group__label">
+          <textarea class="textarea-group__comment" placeholder="Опишите подробно все свои восторги"
+            name="comment"></textarea>
+        </label>
       </fieldset>
       <div class="feedback-form__send">
         <button class="feedback-form__send-button" type="submit">Отправить отзыв</button>

@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -70,6 +72,14 @@
           <div class="list-benefits__image-container">
             <picture>
               <source media="(min-width: 1200px)"
+                srcset="img/benefit-image/benefit1-desktop@1x.webp 1x, img/benefit-image/benefit1-desktop@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)"
+                srcset="img/benefit-image/benefit1-tablet@1x.webp 1x, img/benefit-image/benefit1-tablet@2x.webp 2x"
+                type="image/webp">
+              <source srcset="img/benefit-image/benefit1-phone@1x.webp 1x, img/benefit-image/benefit1-phone@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 1200px)"
                 srcset="img/benefit-image/benefit1-desktop@1x.jpg 1x, img/benefit-image/benefit1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/benefit-image/benefit1-tablet@1x.jpg 1x, img/benefit-image/benefit1-tablet@2x.jpg 2x">
@@ -122,6 +132,14 @@
           </div>
           <div class="list-benefits__image-container">
             <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/benefit-image/benefit2-desktop@1x.webp 1x, img/benefit-image/benefit2-desktop@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)"
+                srcset="img/benefit-image/benefit2-tablet@1x.webp 1x, img/benefit-image/benefit2-tablet@2x.webp 2x"
+                type="image/webp">
+              <source srcset="img/benefit-image/benefit2-phone@1x.webp 1x, img/benefit-image/benefit2-phone@2x.webp 2x"
+                type="image/webp">
               <source media="(min-width: 1200px)"
                 srcset="img/benefit-image/benefit2-desktop@1x.jpg 1x, img/benefit-image/benefit2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
